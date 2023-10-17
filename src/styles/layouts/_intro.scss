@@ -1,5 +1,42 @@
 .intro{
-    h1{
+    height: 100vh;
+    .spline{
+        z-index: 1;
+        height: 100vh;
+    }
+    .container{
         position: absolute;
+        top: 23.25%;
+        left: 4.69%;
+        bottom: 17.65%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 27.0625rem;
+        height: 40%;
+        color: white;
+        h1{
+            font-family: $Font-kanit-Regular; 
+            font-size: 4rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }p{
+            font-family: $Font-kanit-Light;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal; 
+            padding-top: 8%;
+        }
+    }.scroll{
+        svg{
+            width: 73px;
+            height: 66px;
+            position: absolute;
+            bottom: 4.94%;
+            left: 50%;
+        }
+
     }
 }
