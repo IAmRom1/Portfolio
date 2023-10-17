@@ -7,10 +7,10 @@ const Navbar = () => {
             <span>Romain S.</span>
             <ul>
                 <NavLink to="/skill">
-                    <li>Compétance</li>
+                    <li>Compétences</li>
                 </NavLink>
                 <NavLink to="/Project">
-                    <li>Projet</li>
+                    <li>Projets</li>
                 </NavLink>
                     <li>Contact</li>
             </ul>

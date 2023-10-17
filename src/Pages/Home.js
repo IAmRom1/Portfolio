@@ -1,74 +1,41 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Spline from "@splinetool/react-spline";
 import Navbar from "../components/Navbar";
 
+import Loader from "./../components/Loader";
+
 const Home = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    window.onload = () => {
+      setIsLoading(false);
+      document.body.style.overflow = "auto";
+      document.body.style.overflowX = "hidden";
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isLoading) {
+      document.body.style.overflow = "hidden";
+    }
+  }, [isLoading]);
+
   return (
     <>
       <Navbar />
+      {isLoading ? <Loader /> : null}
       <section className="intro">
         <div className="container">
           <h1>Développeur Front-End</h1>
           <p>
-            Un an d'apprentissage en autodidacte et je suis étudiant en
-            développement web.
+            Un an d'apprentissage en autodidacte, étudiant en développement web.
           </p>
         </div>
         <Spline
           className="spline"
           scene="https://prod.spline.design/W5e-RBiReIhiJP5F/scene.splinecode"
         />
-        <svg
-          width="1920"
-          height="579"
-          viewBox="0 0 1920 579"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g filter="url(#filter0_d_3_12)">
-            <path
-              d="M856.506 162.027C494.939 101.525 127.441 463.104 0 557V0H1971.7C2124.02 206.112 1288.11 234.248 856.506 162.027Z"
-              fill="#2933B9"
-            />
-          </g>
-          <defs>
-            <filter
-              id="filter0_d_3_12"
-              x="-8"
-              y="0"
-              width="1998"
-              height="579"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feColorMatrix
-                in="SourceAlpha"
-                type="matrix"
-                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                result="hardAlpha"
-              />
-              <feOffset dx="-4" dy="18" />
-              <feGaussianBlur stdDeviation="2" />
-              <feComposite in2="hardAlpha" operator="out" />
-              <feColorMatrix
-                type="matrix"
-                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-              />
-              <feBlend
-                mode="normal"
-                in2="BackgroundImageFix"
-                result="effect1_dropShadow_3_12"
-              />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="effect1_dropShadow_3_12"
-                result="shape"
-              />
-            </filter>
-          </defs>
-        </svg>
         <div className="scroll">
           <svg
             width="800px"
@@ -99,6 +66,70 @@ const Home = () => {
               stroke-linejoin="round"
             />
           </svg>
+        </div>
+      </section>
+      <section className="skill">
+        <div className="wave">
+          <svg
+            width="1920"
+            height="579"
+            viewBox="0 0 1920 579"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g filter="url(#filter0_d_3_12)">
+              <path
+                d="M856.506 162.027C494.939 101.525 127.441 463.104 0 557V0H1971.7C2124.02 206.112 1288.11 234.248 856.506 162.027Z"
+                fill="#2933B9"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_d_3_12"
+                x="-8"
+                y="0"
+                width="1998"
+                height="579"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dx="-4" dy="18" />
+                <feGaussianBlur stdDeviation="2" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_3_12"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_3_12"
+                  result="shape"
+                />
+              </filter>
+            </defs>
+          </svg>
+        </div>
+        <div className="spline">
+          <Spline scene="https://prod.spline.design/376N0DYVecnAeCjk/scene.splinecode" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            aspernatur a molestiae aliquid amet eos omnis magnam temporibus sint
+            atque? Sunt inventore dignissimos minus nobis quae, consequuntur
+            provident corrupti tenetur!
+          </p>
         </div>
       </section>
     </>

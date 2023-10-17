@@ -8,6 +8,7 @@ nav{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    user-select: none;
     span{
         font-family: $Font-kanit-Regular;
         margin-left: 30px;
@@ -24,6 +25,7 @@ nav{
                 margin: 30px;
                 font-family: $Font-kanit-Extra-Light;
                 font-size: 1.4em;
+                cursor: pointer;
             }
     }
 }
