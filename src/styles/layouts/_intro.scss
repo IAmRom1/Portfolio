@@ -1,14 +1,15 @@
 .intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color-p;
     height: 100vh;
     .spline{
-        z-index: 1;
-        height: 100vh;
+        width: 100%;
+        height: auto;
     }
     .container{
-        position: absolute;
-        top: 23.25%;
-        left: 4.69%;
-        bottom: 17.65%;
+        margin-left: 9.69%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -31,11 +32,12 @@
         }
     }.scroll{
         svg{
+            position: absolute;
+            left: 50%;
+            bottom: 10%;
             width: 73px;
             height: 66px;
-            position: absolute;
-            bottom: 4.94%;
-            left: 50%;
+            overflow: hidden;
         }
 
     }

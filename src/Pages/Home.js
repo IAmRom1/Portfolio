@@ -1,17 +1,20 @@
 import React, { useEffect, useState } from "react";
 import Spline from "@splinetool/react-spline";
 import Navbar from "../components/Navbar";
-
-import Loader from "./../components/Loader";
+import Load from "../components/Load";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
+
+  const handleSplineLoad = () => {
+    setIsLoading(false);
+    document.body.style.overflow = "auto";
+  };
 
   useEffect(() => {
     window.onload = () => {
       setIsLoading(false);
       document.body.style.overflow = "auto";
-      document.body.style.overflowX = "hidden";
     };
   }, []);
 
@@ -21,10 +24,12 @@ const Home = () => {
     }
   }, [isLoading]);
 
+  console.log("isLoading:", isLoading);
+
   return (
     <>
       <Navbar />
-      {isLoading ? <Loader /> : null}
+      {isLoading ? <Load /> : null}
       <section className="intro">
         <div className="container">
           <h1>Développeur Front-End</h1>
@@ -35,6 +40,7 @@ const Home = () => {
         <Spline
           className="spline"
           scene="https://prod.spline.design/W5e-RBiReIhiJP5F/scene.splinecode"
+          onLoad={handleSplineLoad}
         />
         <div className="scroll">
           <svg
