@@ -17,6 +17,7 @@ nav{
     ul{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         a{
             color: white;
             text-decoration: none;

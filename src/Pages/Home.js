@@ -74,6 +74,21 @@ const Home = () => {
           </svg>
         </div>
       </section>
+      <section className="about">
+        <div className="container">
+          <Spline className="spline" scene="https://prod.spline.design/TspWfyl-7Z0Aeb0U/scene.splinecode" />
+          <div className="text">
+            <h2>A propos de moi</h2>
+            <p>
+              Bonjour, je m'appelle Romain et j'ai 20 ans. J'étais initialement
+              passionné par le montage vidéo, mais il y a un an, j'ai découvert
+              le monde du développement web. Cette découverte m'a rapidement
+              passionné, et depuis lors, j'ai consacré un an à apprendre le
+              développement web front-end en autodidacte.
+            </p>
+          </div>
+        </div>
+      </section>
       <section className="skill">
         <div className="wave">
           <svg
@@ -130,12 +145,7 @@ const Home = () => {
         </div>
         <div className="spline">
           <Spline scene="https://prod.spline.design/376N0DYVecnAeCjk/scene.splinecode" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-            aspernatur a molestiae aliquid amet eos omnis magnam temporibus sint
-            atque? Sunt inventore dignissimos minus nobis quae, consequuntur
-            provident corrupti tenetur!
-          </p>
+          <p></p>
         </div>
       </section>
     </>
