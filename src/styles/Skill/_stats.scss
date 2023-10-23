@@ -1,0 +1,28 @@
+.stats{
+    width: 100%;
+    margin-top: 250px;
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center
+    }.software{
+        @include box;
+    }.languages{
+        @include box;
+        .HTML{
+            &::before{
+                content: "aaaaaa";
+                // content: "";
+                // display: block;
+                // width: 150px;
+                // height: 150px;
+                // position: absolute;
+                // top: 0;
+                // left: 0;
+                // background-image: url('../../assets/icons/skill/HTML.svg');
+              }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.presentation{
+    display: flex;
+    flex-direction: column;
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 50px;
+        
+        .text{
+            h1{
+                font-family: $Font-kanit-Regular;
+                text-align: center;
+                font-size: 3.5rem;
+            }
+            p{
+                text-align: center;
+                margin: 32px;
+                font-family: $Font-kanit-Light;
+                font-size: 1.2rem;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                letter-spacing: 1.3px;
+                span{
+                    color: $color-p;
+                    font-family: $Font-kanit-Regular;
+                    text-decoration-line: underline;
+                }
+            }
+        }
+        img{
+            max-width: 800px;
+        }
+    }.scroll{
+        position: relative;
+        left: 50%;
+    }
+}

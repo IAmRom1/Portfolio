@@ -1,10 +1,13 @@
 @import "./settings/reset";
 @import "./settings/settings";
 @import "./settings/variable";
-@import "./components/Loader";
 @import "./components/navbar";
+@import "./components/Loader";
+@import "./components/box";
 @import "./Home/intro";
 @import "./Home/about";
 @import "./Home/skill";
 @import "./Home/project";
 @import "./Home/contact";
+@import "./Skill/intro";
+@import "./Skill/stats";
