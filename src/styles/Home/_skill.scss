@@ -1,0 +1,23 @@
+.skill{
+   .wave{
+    overflow: hidden;
+    width: 100%;
+   }h2{
+      text-align: center;
+      font-family: $Font-kanit-Regular;
+      font-size: 2.5rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      transform: translate(0px, -220px);
+   }.container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      transform: translate(0px, -220px);
+      flex-wrap: wrap;
+      .spline{
+         width: 100px;
+      }
+   }
+}

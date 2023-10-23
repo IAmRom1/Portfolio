@@ -146,9 +146,22 @@ const Home = () => {
             </defs>
           </svg>
         </div>
-        <div className="spline">
-          <Spline scene="https://prod.spline.design/376N0DYVecnAeCjk/scene.splinecode" />
-          <p></p>
+        <h2>Compétences</h2>
+        <div className="container">
+          <div className="box">
+            <p>
+              J'ai acquis de solides compétences en HTML et CSS, avec une
+              préférence marquée pour SCSS. En ce qui concerne le JavaScript,
+              j'ai des bases, et je suis particulièrement attiré par React, une
+              bibliothèque que j'apprécie beaucoup. J'ai appris tout cela de
+              manière autodidacte.
+            </p>
+            <button>En savoir plus</button>
+          </div>
+          <Spline
+            className="spline"
+            scene="https://prod.spline.design/376N0DYVecnAeCjk/scene.splinecode"
+          />
         </div>
       </section>
     </>
