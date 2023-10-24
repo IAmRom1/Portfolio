@@ -33,7 +33,9 @@
             max-width: 800px;
         }
     }.scroll{
-        position: relative;
+        position: absolute;
+        top: 85%;
         left: 50%;
+        overflow: hidden;
     }
 }

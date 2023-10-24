@@ -1,18 +1,19 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import SkillImg from "../assets/imgs/skill.png";
-import LogoPs from "../assets/icons/PS.png";
-import LogoFigma from "../assets/icons/Figma.webp";
-import LogoVsCode from "../assets/icons/VSCODE.png";
-import LogoFCPX from "../assets/icons/FCPX.png";
-import LogoPr from "../assets/icons/PR.png";
-import LogoOffice from "../assets/icons/office.png";
+import LogoPs from "../assets/icons/PS.svg";
+import LogoFigma from "../assets/icons/figma.svg";
+import LogoVsCode from "../assets/icons/VSCode.svg";
+import LogoFCPX from "../assets/icons/FCPX.svg";
+import LogoPr from "../assets/icons/PR.svg";
+import LogoOffice from "../assets/icons/office.svg";
 import LogoHTML from "../assets/icons/HTML.svg";
 import LogoCSS from "../assets/icons/CSS.svg";
 import LogoSASS from "../assets/icons/SASS.svg";
 import LogoJS from "../assets/icons/JS.svg";
 import LogoREACT from "../assets/icons/REACT.svg";
 import LogoPHP from "../assets/icons/PHP.svg";
+import Footer from "../components/Footer";
 
 const Skill = () => {
   return (
@@ -101,36 +102,17 @@ const Skill = () => {
           <div className="languages">
             <h3>Languages</h3>
             <div className="content">
-              <img
-                src={LogoHTML}
-                className="HTML"
-                alt="Logo HTML"
-                title="HTML"
-              />
-              <img src={LogoCSS} className="CSS" alt="Logo CSS" title="CSS" />
-              <img
-                src={LogoSASS}
-                className="SASS"
-                alt="Logo SASS"
-                title="SASS"
-              />
-              <img
-                src={LogoJS}
-                className="JS"
-                alt="Logo Javascript"
-                title="JS"
-              />
-              <img
-                src={LogoREACT}
-                className="REACT"
-                alt="Logo React.js"
-                title="REACT"
-              />
-              <img src={LogoPHP} className="PHP" alt="Logo PHP" title="PHP" />
+              <img src={LogoHTML} alt="Logo HTML" title="Logo HTML" />
+              <img src={LogoCSS} alt="Logo CSS" title="Logo CSS" />
+              <img src={LogoSASS} alt="Logo SASS" title="Logo SASS" />
+              <img src={LogoJS} alt="Logo Javascript" title="Logo Javascript" />
+              <img src={LogoREACT} alt="Logo React.js" title="Logo React.JS" />
+              <img src={LogoPHP} alt="Logo PHP" title="Logo PHP" />
             </div>
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };

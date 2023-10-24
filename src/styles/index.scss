@@ -1,9 +1,10 @@
+@import "./settings/variable";
 @import "./settings/reset";
 @import "./settings/settings";
-@import "./settings/variable";
 @import "./components/navbar";
 @import "./components/Loader";
 @import "./components/box";
+@import "./components/footer";
 @import "./Home/intro";
 @import "./Home/about";
 @import "./Home/skill";
@@ -11,3 +12,4 @@
 @import "./Home/contact";
 @import "./Skill/intro";
 @import "./Skill/stats";
+@import "./Skill/Responsive";
