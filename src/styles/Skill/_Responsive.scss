@@ -7,6 +7,8 @@
             }img{
                 width: 500px;
             }
+        }.scroll{
+            top: 75%;
         }
     }
 }
@@ -16,6 +18,31 @@
             flex-direction: column;
         }.scroll{
             visibility: hidden;
+        }
+    }
+}
+
+@media screen and (max-width: 660px){
+    .stats{
+        .container{
+            .languages{
+                width: 540px;
+                height: 396px;
+                .content{
+                    img{
+                        margin: 17px;
+                    }
+                }
+            }
+            .software{
+                width: 540px;
+                height: 396px;
+                .content{
+                    img{
+                        margin: 17px;
+                    }
+                }
+            }
         }
     }
 }
@@ -31,5 +58,195 @@
                 width: 350px;
             }
         }
+    }.stats{
+        .container{
+            .languages{
+                width: 438px;
+                height: 322px;
+                .content{
+                    img{
+                        margin: 4px;
+                    }
+                }
+            }
+            .software{
+                width: 438px;
+                height: 322px;
+                .content{
+                    img{
+                        margin: 4px;
+                    }
+                }
+            }
+        }
+    }
+    
 }
+@media screen and (max-width: 450px){
+    .stats{
+        .container{
+            .languages{
+                width: 376px;
+                height: 367px;
+                .content{
+                    img{
+                        margin: 2.5px;
+                        width: 115px;
+                    }
+                }
+            }
+            .software{
+                width: 376px;
+                height: 367px;
+                .content{
+                    img{
+                        margin: 2.5px;
+                        width: 115px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 388px){
+    .presentation{
+        .container{
+            .text{
+                h1{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+    .stats{
+        .container{
+            .languages{
+                width: 297px;
+                height: 306px;
+                .content{
+                    img{
+                        margin: 2.5px;
+                        width: 89px;
+                    }
+                }
+            }
+            .software{
+                width: 297px;
+                height: 306px;
+                .content{
+                    img{
+                        margin: 2.5px;
+                        width: 89px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 304px){
+    .presentation{
+        .container{
+            .text{
+                margin-top: 150px;
+                h1{
+                    font-size: 2rem;
+                }
+                
+            }img{
+                width: 250px;
+            }
+        }
+    }.stats{
+        .container{
+            .languages{
+                width: 241px;
+                height: 263px;
+                .content{
+                    img{
+                        margin: 2.5px;
+                        width: 71px;
+                    }
+                }
+            }
+            .software{
+                width: 241px;
+                height: 263px;
+                .content{
+                    img{
+                        margin: 2.5px;
+                        width: 71px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 250px){
+    .stats{
+        .container{
+            .languages{
+                width: 185px;
+                height: 229px;
+                .content{
+                    img{
+                        margin: 2.5px;
+                        width: 55px;
+                    }
+                }
+            }
+            .software{
+                width: 185px;
+                height: 229px;
+                .content{
+                    img{
+                        margin: 2.5px;
+                        width: 55px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 195px){
+    .presentation{
+        .container{
+            .text{
+                margin-top: 150px;
+                h1{
+                    font-size: 1.2rem;
+                }
+                
+            }img{
+                width: 250px;
+            }
+        }
+    }.stats{
+        .container{
+            .languages{
+                width: 129px;
+                height: 251px;
+                .content{
+                    img{
+                        margin: 2.5px;
+                        width: 41px;
+                    }
+                }
+            }
+            .software{
+                width: 129px;
+                height: 251px;
+                .content{
+                    img{
+                        margin: 2.5px;
+                        width: 41px;
+                    }
+                }
+            }
+        }
+    }
+    
 }
