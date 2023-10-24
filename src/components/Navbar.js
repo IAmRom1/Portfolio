@@ -1,21 +1,34 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-    return (
-        <nav>
-            <span>Romain S.</span>
-            <ul>
-                <NavLink to="/skill">
-                    <li>Compétences</li>
-                </NavLink>
-                <NavLink to="/Project">
-                    <li>Projets</li>
-                </NavLink>
-                    <li>Contact</li>
-            </ul>
-        </nav>
-    );
+  return (
+    <nav className="nav">
+      <input type="checkbox" id="nav-check" />
+      <div className="nav-header">
+        <NavLink to="/home">
+        <div className="nav-title">Romain S.</div>
+        </NavLink>
+      </div>
+      <div className="nav-btn">
+        <label htmlFor="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <ul className="nav-list">
+        <NavLink to="/skill">
+          <li>Compétences</li>
+        </NavLink>
+        <NavLink to="/Project">
+          <li>Projets</li>
+        </NavLink>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  );
 };
 
 export default Navbar;
