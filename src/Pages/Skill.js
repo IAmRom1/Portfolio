@@ -14,14 +14,15 @@ import LogoJS from "../assets/icons/JS.svg";
 import LogoREACT from "../assets/icons/REACT.svg";
 import LogoPHP from "../assets/icons/PHP.svg";
 import Footer from "../components/Footer";
+import ScrollTop from "../components/ScrollTop";
 
 const Skill = () => {
   return (
     <>
+    <ScrollTop/>
       <Navbar />
       <section className="presentation">
         <div className="container">
-          <div className="box"></div>
           <div className="text">
             <h1>Mes compétences</h1>
             <p>

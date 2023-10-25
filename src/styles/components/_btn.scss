@@ -1,0 +1,16 @@
+@mixin more{
+    padding: 22px 64px;
+    font-size: 1.4rem;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    background: $color-p;
+    color: white;
+    font-family: $Font-kanit-Light;
+    user-select: none;
+    transition: 0.3s;
+    &:hover{
+        box-shadow: 6px 10px 4px 0px rgba(0, 0, 0, 0.40);
+        transition: 0.2s;
+    }
+}

@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import Spline from "@splinetool/react-spline";
 import Navbar from "../components/Navbar";
 import Load from "../components/Load";
+import Skill_img from "../assets/imgs/TableauSkill.png";
+import { NavLink } from "react-router-dom";
+import ScrollTop from "../components/ScrollTop";
 // 1500
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,6 +31,7 @@ const Home = () => {
 
   return (
     <>
+    <ScrollTop/>
       <Navbar />
       {isLoading ? <Load /> : null}
       <section className="intro">
@@ -156,11 +160,13 @@ const Home = () => {
               bibliothèque que j'apprécie beaucoup. J'ai appris tout cela de
               manière autodidacte.
             </p>
+            <NavLink to="/skill">
             <button>En savoir plus</button>
+            </NavLink>
           </div>
-          <Spline
-            className="spline"
-            scene="https://prod.spline.design/376N0DYVecnAeCjk/scene.splinecode"
+          <img
+            src={Skill_img}
+            alt="Tableau avec du React.JS, HTML, CSS, SASS, JS"
           />
         </div>
       </section>

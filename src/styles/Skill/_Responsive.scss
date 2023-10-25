@@ -185,6 +185,11 @@
     
 }
 @media screen and (max-width: 250px){
+    .presentation{
+            img{
+                overflow: hidden;
+            }
+        }
     .stats{
         .container{
             .languages{
@@ -209,15 +214,17 @@
             }
         }
     }
-    
-}
+} 
 @media screen and (max-width: 195px){
     .presentation{
         .container{
             .text{
                 margin-top: 150px;
+                p{
+                    margin: 22px;
+                }
                 h1{
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                 }
                 
             }img{

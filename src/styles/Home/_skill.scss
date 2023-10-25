@@ -2,22 +2,40 @@
    .wave{
     overflow: hidden;
     width: 100%;
-   }h2{
+   }
+   h2{
       text-align: center;
+      transform: translateY(-250px);
       font-family: $Font-kanit-Regular;
-      font-size: 2.5rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      transform: translate(0px, -220px);
+      font-size: 3.5rem;
+
    }.container{
       display: flex;
       flex-direction: row;
       align-items: center;
-      transform: translate(0px, -220px);
-      flex-wrap: wrap;
-      .spline{
-         width: 100px;
+      justify-content: center;
+      transform: translateY(-340px);
+      .box{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         p{
+            font-family: $Font-kanit-Light;
+            width: 770px;
+            font-size: 1.5rem;
+            letter-spacing: 1.2px;
+            margin-bottom: 60px;
+            line-height: normal;
+            font-style: normal;
+            font-weight: 300;
+         }button{
+            @include more;
+         }
+      }img{
+         width: 429px;
+         height: 651px;
+         margin: 120px;
+         flex-shrink: 0;
       }
    }
 }
