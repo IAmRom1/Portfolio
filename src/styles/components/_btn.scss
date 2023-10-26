@@ -11,6 +11,8 @@
     transition: 0.3s;
     &:hover{
         box-shadow: 6px 10px 4px 0px rgba(0, 0, 0, 0.40);
+        transform: scale(1.05);
+        transition-timing-function: cubic-bezier(0.72, -0.06, 0, 1);
         transition: 0.2s;
     }
 }

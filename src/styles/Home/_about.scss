@@ -1,4 +1,5 @@
 .about{
+    z-index: 2;
     width: 100%;
     height: 520px;
     background: $color-p;
@@ -12,25 +13,45 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            color: #ffffff;
-            width: 933px;
-            margin: 131px;
-            h2{
-                font-family: $Font-kanit-Regular; 
-                font-size: 3.5rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                margin: 20px;
+            color: white;
+            width: 100%; 
+            margin: 5%; 
+            &::selection {
+              background: #ffffff;
+              color: #2933B9;
+            }h2{
+              font-family: $Font-kanit-Regular;
+              font-size: 3rem; 
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              margin: 2%; 
             }p{
-               
-                font-family: $Font-kanit-Light;
-                font-size: 15px;
-                font-style: normal;
-                font-weight: 300;
-                line-height: normal;
-                letter-spacing: 1.3px;
+              font-family: $Font-kanit-Light;
+              font-size: 1rem; 
+              font-style: normal;
+              font-weight: 300;
+              line-height: normal;
+              letter-spacing: 0.13em; 
+            }button{
+              margin-top: 2%;
+              padding: 1.5em 2em;
+              font-size: 1rem;
+              border-radius: 2em;
+              border: none;
+              outline: none;
+              background: $color-p;
+              color: white;
+              font-family: $Font-kanit-Light;
+              user-select: none;
+              transition: 0.5s;
+              &:hover {
+                background: white;
+                color: black;
+                box-shadow: 0.4em 0.6667em 0.2667em 0 rgba(0, 0, 0, 0.4);
+                transition: 0.4s;
+              }
             }
-        }
+          }
     }
 }

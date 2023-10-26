@@ -1,4 +1,4 @@
-footer{
+.footer-p{
     height: 350px;
     background: $color-p;
     display: flex;
@@ -27,6 +27,38 @@ footer{
         }
         
     }.reseau{
+        padding: 2.5%;
+        -webkit-user-drag: none;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        img{
+            margin: 20px;
+            width: 40px;
+            height: 40px;
+            transition: 0.3s;
+            &:hover{
+                transform: scale(1.3);
+                transition: 0.2s;
+            }
+        }
+
+    }p{
+        color: white;
+        font-family: $Font-kanit-Extra-Light;
+        user-select: none;
+    }
+}
+.footer-s{
+    height: 350px;
+    background: $color-p;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    .reseau{
         padding: 2.5%;
         -webkit-user-drag: none;
         user-select: none;

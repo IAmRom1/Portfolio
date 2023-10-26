@@ -16,6 +16,10 @@
         width: 27.0625rem;
         height: 50%;
         color: white;
+        ::selection{
+            background: #ffffff;
+            color: #2933B9;
+        }
         h1{
             font-family: $Font-kanit-Regular; 
             font-size: 4rem;
@@ -24,11 +28,11 @@
             line-height: normal;
         }p{
             font-family: $Font-kanit-Light;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-style: normal;
             font-weight: 300;
             line-height: normal; 
-            padding-top: 8%;
+            padding-top: 5%;
         }
     }.scroll{
         svg{

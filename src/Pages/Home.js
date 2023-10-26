@@ -1,39 +1,47 @@
 import React, { useEffect, useState } from "react";
 import Spline from "@splinetool/react-spline";
 import Navbar from "../components/Navbar";
-import Load from "../components/Load";
 import Skill_img from "../assets/imgs/TableauSkill.png";
 import { NavLink } from "react-router-dom";
 import ScrollTop from "../components/ScrollTop";
+import Projet_img from "../assets/imgs/Projet.png";
+import Footer2 from "../components/Footer2";
 // 1500
 const Home = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  const handleSplineLoad = () => {
-    setIsLoading(false);
-    document.body.style.overflow = "auto";
-  };
+  const [splineStyle, setSplineStyle] = useState({
+    width: "100%",
+    height: "600px",
+  });
 
   useEffect(() => {
-    window.onload = () => {
-      setIsLoading(false);
-      document.body.style.overflow = "auto";
+    const handleWindowResize = () => {
+      const maxWidth = 1100;
+
+      if (window.innerWidth <= maxWidth) {
+        setSplineStyle({
+          width: "100%",
+          height: "600px",
+        });
+      } else {
+        setSplineStyle({
+          width: "100%",
+          height: "600px",
+        });
+      }
+    };
+
+    window.addEventListener("resize", handleWindowResize);
+
+    handleWindowResize();
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
 
-  useEffect(() => {
-    if (isLoading) {
-      document.body.style.overflow = "hidden";
-    }
-  }, [isLoading]);
-
-  console.log("isLoading:", isLoading);
-
   return (
     <>
-    <ScrollTop/>
+      <ScrollTop />
       <Navbar />
-      {isLoading ? <Load /> : null}
       <section className="intro">
         <div className="container">
           <h1>Développeur Front-End</h1>
@@ -44,7 +52,7 @@ const Home = () => {
         <Spline
           className="spline"
           scene="https://prod.spline.design/W5e-RBiReIhiJP5F/scene.splinecode"
-          onLoad={handleSplineLoad}
+          style={splineStyle}
         />
         <div className="scroll">
           <svg
@@ -93,6 +101,7 @@ const Home = () => {
               passionné, et depuis lors, j'ai consacré un an à apprendre le
               développement web front-end en autodidacte.
             </p>
+            <button>Télécharger mon CV</button>
           </div>
         </div>
       </section>
@@ -161,7 +170,7 @@ const Home = () => {
               manière autodidacte.
             </p>
             <NavLink to="/skill">
-            <button>En savoir plus</button>
+              <button>En savoir plus</button>
             </NavLink>
           </div>
           <img
@@ -170,6 +179,114 @@ const Home = () => {
           />
         </div>
       </section>
+      <section className="project">
+        <h2>Projet</h2>
+        <div className="container">
+          <img src={Projet_img} alt="Usine a création de site internet" />
+          <div className="text">
+            <p>
+              Pendant ma période d'apprentissage, j'ai travaillé sur différents
+              projets, notamment la création d'un quiz, d'un générateur de mots
+              de passe, d'un portfolio, et bien d'autres encore.
+            </p>
+            <button>En savoir plus</button>
+          </div>
+        </div>
+      </section>
+      <section className="contact">
+        <div className="wave">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1919"
+            height="513"
+            viewBox="0 0 1919 513"
+            fill="none"
+          >
+            <g filter="url(#filter0_i_8_36)">
+              <path
+                d="M1919 512.5V-2L2.03848e-05 0V68V126.5C284.548 346.449 742.553 314.475 934.987 257.359C1310.5 202 1737.74 237.304 1919 512.5Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_i_8_36"
+                x="-3"
+                y="-7"
+                width="1922"
+                height="519.5"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dx="-3" dy="-16" />
+                <feGaussianBlur stdDeviation="2.5" />
+                <feComposite
+                  in2="hardAlpha"
+                  operator="arithmetic"
+                  k2="-1"
+                  k3="1"
+                />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="shape"
+                  result="effect1_innerShadow_8_36"
+                />
+              </filter>
+            </defs>
+          </svg>
+        </div>
+        <div className="container">
+          <h2 id="contact">Contact moi</h2>
+          <form>
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Votre Prénom | Nom"
+              minLength="2"
+              autoComplete="off"
+              required
+            />
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="Votre E-mail"
+              required
+            />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              autoComplete="off"
+              placeholder="Votre Message"
+              minLength="15"
+              maxLength="3000"
+              required
+            ></textarea>
+            <input type="submit" />
+          </form>
+        </div>
+      </section>
+      <Footer2 />
     </>
   );
 };

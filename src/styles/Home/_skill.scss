@@ -1,15 +1,18 @@
 .skill{
    .wave{
+      z-index: 1;
     overflow: hidden;
     width: 100%;
    }
    h2{
+      
       text-align: center;
       transform: translateY(-250px);
       font-family: $Font-kanit-Regular;
       font-size: 3.5rem;
 
    }.container{
+      
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -19,22 +22,26 @@
          display: flex;
          flex-direction: column;
          align-items: center;
-         p{
+         p {
             font-family: $Font-kanit-Light;
-            width: 770px;
+            width: 100%;
             font-size: 1.5rem;
             letter-spacing: 1.2px;
-            margin-bottom: 60px;
-            line-height: normal;
+            margin-bottom: 3rem;
             font-style: normal;
             font-weight: 300;
-         }button{
+            margin-left: 5%;
+            @media screen and (min-width: 768px) {
+              width: 50%;
+              margin-left: 10%;
+            }
+          }button{
             @include more;
          }
       }img{
          width: 429px;
          height: 651px;
-         margin: 120px;
+         margin-left: 120px;
          flex-shrink: 0;
       }
    }

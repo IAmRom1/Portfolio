@@ -2,10 +2,9 @@ import React from "react";
 import Linkedin from "./../assets/icons/linkedin.svg";
 import GitHub from "./../assets/icons/github.svg";
 
-const Footer = () => {
+const Footer2 = () => {
   return (
-    <footer className="footer-p">
-      <button><a href="/home#contact">Contact moi</a></button>
+    <footer className="footer-s">
       <div className="reseau" target="_blank" rel="noreferrer">
         <a href="https://www.linkedin.com/in/romain-savigny-417b55282/">
           <img src={Linkedin} alt="Logo Linkedin" />
@@ -19,4 +18,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer2;

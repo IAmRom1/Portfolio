@@ -1,13 +1,179 @@
+@media only screen and (max-width: 1500px) {
+    .skill{
+        .container{
+            transform: translateY(-286px);
+            img{
+                width: 400px;
+                height: 569px;
+            }
+        }
+    }
+    .project{
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            p{
+                margin: 0;
+                width: 1120px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .about{
+        .container{
+            flex-direction: column;
+            align-items: center;
+            canvas{
+                height: 170px;
+            }.text{
+                flex-direction: column;
+                margin: 0;
+                p{
+                    text-align: center;
+                    width: 100%;
+                    margin: 0em 2em;
+                }
+                h2{
+                    font-size: 2rem;
+                    margin: 0;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+    .skill{
+        .container{
+            transform: translateY(-286px);
+            img{
+                width: 400px;
+                height: 569px;
+                margin-left: 0;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .skill{
+        .container{
+            transform: translateY(-200px);
+            flex-direction: column-reverse;
+        }
+    }.project{
+        margin-top: 300px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .project{
+        .container{
+            .text{
+                justify-content: center;
+                p{
+                    text-align: center;
+                    margin: 0em 1.5em;
+                    letter-spacing: 0px;
+                    width: 100%;
+                }
+            }
+            img{
+                width: 980px;
+                height: 250px;
+            }
+        }
+    }
+}
 @media only screen and (max-width: 1100px) {
     .intro{
         flex-direction: column;
         .container{
-            margin-top:50%;
+            margin: 50% 1.5em 0% 1.5em;
+            text-align: center;
+        }.scroll{
+            svg{
+                visibility: hidden;
+            }
+        }.spline{
+            height: 400px;
+            canvas{
+                height: 400px;
+                width: 400px;
+            }
         }
-    // .scroll{
-    //     svg{
-    //         bottom: 2%;
-    //     }
-    // }
+    }.about{
+        height: 400px;
+        .container{
+            margin-top: 120px;
+            .text{
+                p{
+                    margin: 0px;
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
+@media only screen and (max-width: 1000px) {
+    .project{
+        .container{
+            img{
+                width: 700px;
+                height: 200px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 955px) {
+    
+}
+@media only screen and (max-width: 759px) {
+    .about{
+        .container{
+            margin-top: 0px;
+        }
+    }.skill{
+        .container{
+            .box{
+                p{
+                    text-align: center;
+                    margin-right: 1em;
+                    margin-left: 1em;
+                }
+            }
+        }
+    }.project{
+        .container{
+            img{
+                width: 475px;
+                height: 150px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 450px){
+    .project{
+        .container{
+            img{
+                width: 300px;
+                height: 100px;
+            }
+        }
+    }.contact{
+        .container{
+            h2{
+                font-size: 2.5rem;
+            }
+            form{
+                input[type="text"]{
+                    width: 259px;
+                }input[type="email"]{
+                    width: 259px;
+                }textarea{
+                    width: 259px;
+                }
+            }
+        }
+    }
 }

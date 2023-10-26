@@ -1,0 +1,38 @@
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-family: $Font-kanit-Regular;
+        transform: translateY(-200px);
+        font-size: 3.5rem;
+    }.container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 1120px;
+            height: 320px;
+            padding: 10px;
+        }.text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                font-size: 1.5rem;
+                font-family: $Font-kanit-Light;
+                letter-spacing: 1.2px;
+                margin: 0px 30px;
+                line-height: normal;
+                font-style: normal;
+                font-weight: 300;
+            }
+            button{
+                margin-top: 70px;
+                @include more;
+            }
+        }
+    }
+}
