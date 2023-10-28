@@ -8,6 +8,10 @@ import Projet_img from "../assets/imgs/Projet.png";
 import Footer2 from "../components/Footer2";
 // 1500
 const Home = () => {
+const handleSubmit = (e)=>{
+  e.preventDefault();
+}
+
   const [splineStyle, setSplineStyle] = useState({
     width: "100%",
     height: "600px",
@@ -254,7 +258,7 @@ const Home = () => {
         </div>
         <div className="container">
           <h2 id="contact">Contact moi</h2>
-          <form>
+          <form onSubmit={handleSubmit}>
             <input
               type="text"
               name=""

@@ -153,6 +153,26 @@
     }
 }
 @media only screen and (max-width: 450px){
+    .intro{
+        .container{
+            margin-top: 250px;
+
+            h1{
+                text-align: center;
+            }p{
+                text-align: center;
+            }
+        }
+    }.about{
+        .container{
+            .text{
+                p{
+                    text-align: justify;
+                    margin: 0 1em;
+                }
+            }
+        }
+    }
     .project{
         .container{
             img{
