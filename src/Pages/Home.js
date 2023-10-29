@@ -1,17 +1,43 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { NavLink } from "react-router-dom";
 import Spline from "@splinetool/react-spline";
+import emailjs from "@emailjs/browser";
 import Navbar from "../components/Navbar";
 import Skill_img from "../assets/imgs/TableauSkill.png";
-import { NavLink } from "react-router-dom";
 import ScrollTop from "../components/ScrollTop";
 import Projet_img from "../assets/imgs/Projet.png";
 import Footer2 from "../components/Footer2";
-// 1500
-const Home = () => {
-const handleSubmit = (e)=>{
-  e.preventDefault();
-}
 
+const Home = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const formMessage = document.querySelector("form");
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE,
+        process.env.REACT_APP_TEMPLATE,
+        form.current,
+        process.env.REACT_APP_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          form.current.reset();
+          formMessage.innerHTML = "<p class=success>Message envoyé!</p>";
+        },
+        (error) => {
+          console.log(error.text);
+          formMessage.innerHTML =
+            "<p class=error>Une erreur s'est produite, veuillez réessayer</p>";
+          setTimeout(() => {
+            formMessage.innerHTML = "";
+          }, 5000);
+        }
+      );
+  };
   const [splineStyle, setSplineStyle] = useState({
     width: "100%",
     height: "600px",
@@ -258,11 +284,10 @@ const handleSubmit = (e)=>{
         </div>
         <div className="container">
           <h2 id="contact">Contact moi</h2>
-          <form onSubmit={handleSubmit}>
+          <form ref={form} onSubmit={sendEmail}>
             <input
               type="text"
-              name=""
-              id=""
+              name="name"
               placeholder="Votre Prénom | Nom"
               minLength="2"
               autoComplete="off"
@@ -270,14 +295,12 @@ const handleSubmit = (e)=>{
             />
             <input
               type="email"
-              name=""
-              id=""
+              name="email"
               placeholder="Votre E-mail"
               required
             />
             <textarea
-              name=""
-              id=""
+              name="message"
               cols="30"
               rows="10"
               autoComplete="off"

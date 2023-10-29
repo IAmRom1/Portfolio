@@ -51,6 +51,15 @@
                     background: $color-p-s;
                 }
 
+            }.success{
+                color: white;
+                font-family: $Font-kanit-Light;
+                font-size: 1.5rem;
+            }.error{
+                color: white;
+                font-family: $Font-kanit-Light;
+                font-size: 1.5rem;
+                font-weight: bold;
             }
                 
         }
