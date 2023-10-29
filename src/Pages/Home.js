@@ -67,7 +67,10 @@ const Home = () => {
       window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
-
+  console.log(
+    "%cJe reconnais qu'il y a des erreurs ici... Saurais-tu comment les rectifier ? N'hésite pas à m'expliquer via le formulaire 😀",
+    "color: #ffff; font-size:2rem;"
+  );
   return (
     <>
       <ScrollTop />
@@ -246,9 +249,9 @@ const Home = () => {
                 width="1922"
                 height="519.5"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
