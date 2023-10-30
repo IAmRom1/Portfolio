@@ -9,6 +9,11 @@
     font-family: $Font-kanit-Light;
     user-select: none;
     transition: 0.3s;
+    a{
+        color: white;
+        text-decoration: none;
+        font-family: $Font-kanit-Light;
+    }
     &:hover{
         box-shadow: 6px 10px 4px 0px rgba(0, 0, 0, 0.40);
         transform: scale(1.05);

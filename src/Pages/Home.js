@@ -203,7 +203,9 @@ const Home = () => {
               manière autodidacte.
             </p>
             <NavLink to="/skill">
-              <button>En savoir plus</button>
+              <button>
+                <a href="/src/assets/CV/CV.pdf"  download="CV Romain Savigny">En savoir plus</a>
+              </button>
             </NavLink>
           </div>
           <img
@@ -285,8 +287,8 @@ const Home = () => {
             </defs>
           </svg>
         </div>
-        <div className="container">
-          <h2 id="contact">Contact moi</h2>
+        <div id="contact" className="container">
+          <h2>Contact moi</h2>
           <form ref={form} onSubmit={sendEmail}>
             <input
               type="text"

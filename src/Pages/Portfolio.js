@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Porfolio = () => {
+const Portfolio = () => {
     return (
         <div>
-            profolio
+            portfolio
         </div>
     );
 };
 
-export default Porfolio;
+export default Portfolio;

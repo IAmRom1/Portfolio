@@ -1,0 +1,25 @@
+.more{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+    margin-top: 150px;
+    h2{
+        font-family: $Font-kanit-Regular;
+        font-size: 2.5rem;
+        margin-bottom: 3em;
+    }p{
+      font-family: $Font-kanit-Light;
+      font-size: 1rem; 
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      letter-spacing: 0.13em;
+      margin-bottom: 60px;
+      text-align: center;
+      margin: 4em 4em;
+    }button{
+        @include more;
+    }
+}

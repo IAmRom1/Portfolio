@@ -1,0 +1,36 @@
+.section3{
+    margin-top: 50px;
+    margin-bottom: 120px;
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        img{
+            width: 615px;
+            height: 466px;
+            border-radius: 30px;
+            box-shadow: 10px 12px 4px 3px rgba(0, 0, 0, 0.25);
+            margin: 1.5em;
+        }.text{
+            text-align: center;
+            h2{
+                font-family: $Font-kanit-Regular;
+                font-size: 2.5rem;
+                margin-bottom: 3em;
+            }p{
+              font-family: $Font-kanit-Light;
+              font-size: 1rem; 
+              font-style: normal;
+              font-weight: 300;
+              line-height: normal;
+              letter-spacing: 0.13em;
+              margin: 1.5em;
+              margin-bottom: 60px;
+              text-align: left
+            }button{
+                @include more;
+            }
+        }
+    }
+}
