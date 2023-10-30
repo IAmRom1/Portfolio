@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="nav">
       <input type="checkbox" id="nav-check" />
       <div className="nav-header">
-        <NavLink to="/home">
+        <NavLink to="/Accueil">
         <div className="nav-title">Romain S.</div>
         </NavLink>
       </div>
@@ -19,13 +19,13 @@ const Navbar = () => {
       </div>
 
       <ul className="nav-list">
-        <NavLink to="/skill">
+        <NavLink to="/Compétences">
           <li>Compétences</li>
         </NavLink>
-        <NavLink to="/Project">
+        <NavLink to="/Projet">
           <li>Projets</li>
         </NavLink>
-        <NavLink to="/home#contact">
+        <NavLink to="/Accueil">
         <li>Contact</li>
         </NavLink>
       </ul>

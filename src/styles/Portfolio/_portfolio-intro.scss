@@ -1,0 +1,31 @@
+.portfolio-intro{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+    h1{
+        margin-top: 150px;
+        text-align: center;
+        font-size: 3rem;
+        font-family: $Font-kanit-Regular;
+        text-align: center;
+    }.container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        p{
+            font-family: $Font-kanit-Light;
+              font-size: 1rem; 
+              font-style: normal;
+              font-weight: 300;
+              line-height: normal;
+              letter-spacing: 0.13em;
+              margin: 1.5em;
+              text-align: left
+        }
+        img{
+            width: 523px;
+            height: 593px;
+            margin: 4em;
+        }
+    }
+}

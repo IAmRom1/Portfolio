@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import ScrollTop from "../components/ScrollTop";
 import UIProjet from "./../assets/imgs/UI-Project.png";
 import VisuelFigma from "./../assets/imgs/visuelFigma.png";
 import VisuelYTB2MP4 from "./../assets/imgs/VisuelYoutube2mp4.png";
@@ -10,6 +11,7 @@ const Project = () => {
   return (
     <>
       <Navbar/>
+      <ScrollTop/>
       <section className="Section1">
         <h1>Projet</h1>
         <div className="container">
@@ -42,7 +44,7 @@ const Project = () => {
               celui-ci est considérablement plus important que les deux
               précédents.
             </p>
-            <NavLink to="/Project/Portfolio">
+            <NavLink to="/Projet/Portfolio">
               <button>En Savoir plus</button>
             </NavLink>
           </div>

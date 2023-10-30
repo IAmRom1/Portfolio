@@ -134,7 +134,11 @@ const Home = () => {
               passionné, et depuis lors, j'ai consacré un an à apprendre le
               développement web front-end en autodidacte.
             </p>
-            <button>Télécharger mon CV</button>
+            <button>
+              <a href="/src/assets/CV/CV.pdf" download="CV_Romain_Savigny.pdf">
+                Télécharger mon CV
+              </a>
+            </button>
           </div>
         </div>
       </section>
@@ -202,10 +206,8 @@ const Home = () => {
               bibliothèque que j'apprécie beaucoup. J'ai appris tout cela de
               manière autodidacte.
             </p>
-            <NavLink to="/skill">
-              <button>
-                <a href="/src/assets/CV/CV.pdf"  download="CV Romain Savigny">En savoir plus</a>
-              </button>
+            <NavLink to="/Compétences">
+              <button>En savoir plus</button>
             </NavLink>
           </div>
           <img
@@ -224,7 +226,9 @@ const Home = () => {
               projets, notamment la création d'un quiz, d'un générateur de mots
               de passe, d'un portfolio, et bien d'autres encore.
             </p>
-            <button>En savoir plus</button>
+            <NavLink to="/Projet">
+              <button>En savoir plus</button>
+            </NavLink>
           </div>
         </div>
       </section>

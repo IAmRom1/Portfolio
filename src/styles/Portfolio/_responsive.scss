@@ -1,0 +1,56 @@
+@media only screen and (max-width: 1410px){
+    .portfolio-explication{
+            .btn{
+               flex-direction: column; 
+               width: 300px;
+               button{
+                font-size: 1rem;
+               }
+            }
+        
+    }
+}
+@media only screen and (max-width: 1100px){
+    .portfolio-intro{
+        .container{
+            flex-direction: column;
+        }
+    }.portfolio-explication{
+        .container{
+            flex-direction: column-reverse;
+        }
+    }
+}
+@media only screen and (max-width: 500px){
+    .portfolio-intro{
+        .container{
+            p{
+                text-align: justify;
+            }
+            img{
+                width: 311px;
+                height: 356px;
+            }
+        }
+    }.portfolio-explication{
+        .container{
+            p{
+                text-align: justify;
+            }
+            img{
+                width: 190px;
+                height: 229px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 300px){
+    .portfolio-intro{
+        .container{
+            img{
+                width: 176px;
+                height: 193px;
+            }
+        }
+    }
+}
