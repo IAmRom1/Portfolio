@@ -47,7 +47,7 @@ const Portfolio = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Consulté le premier portfolio
+              Consultez le premier portfolio.
             </a>
           </button>
           <button>
@@ -65,7 +65,7 @@ const Portfolio = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Consulté le second portfolio
+              Consultez le deuxième portfolio.
             </a>
           </button>
         </div>
