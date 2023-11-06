@@ -5,7 +5,9 @@ import GitHub from "./../assets/icons/github.svg";
 const Footer = () => {
   return (
     <footer className="footer-p">
-      <button><a href="/Accueil">Contact moi</a></button>
+      <button>
+        <a href="https://romainsavigny.be/">Contact moi</a>
+      </button>
       <div className="reseau" target="_blank" rel="noreferrer">
         <a href="https://www.linkedin.com/in/romain-savigny-417b55282/">
           <img src={Linkedin} alt="Logo Linkedin" />

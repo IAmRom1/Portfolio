@@ -128,7 +128,7 @@ const Home = () => {
           <div className="text">
             <h2>A propos de moi</h2>
             <p>
-              Bonjour, je m'appelle Romain et j'ai 20 ans. J'étais initialement
+              Bonjour, je m'appelle Romain et j'ai 19 ans. J'étais initialement
               passionné par le montage vidéo, mais il y a un an, j'ai découvert
               le monde du développement web. Cette découverte m'a rapidement
               passionné, et depuis lors, j'ai consacré un an à apprendre le
