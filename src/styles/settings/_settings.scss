@@ -1,28 +1,31 @@
-@font-face {
-    font-family: "Kanit-black";
-    src: url("./../../assets/fonts/Kanit/Kanit-Black.ttf");
-}
-@font-face {
-    font-family: "Kanit-Light";
-    src: url("./../../assets/fonts/Kanit/Kanit-Light.ttf");
-}
-@font-face {
-    font-family: "Kanit-Extra-Light";
-    src: url("./../../assets/fonts/Kanit/Kanit-ExtraLight.ttf");
-}
-@font-face {
-    font-family: "Kanit-Regular";
-    src: url("./../../assets/fonts/Kanit/Kanit-Regular.ttf");
-}
+// @font-face {
+//     font-family: "Kanit-Light";
+//     src: url("https://fonts.gstatic.com/s/kanit/v7/nKCKOGGoMkG5t2A0b9Pv5p4tjLY.ttf") format('truetype');
+//   }
+  
+//   @font-face {
+//     font-family: "Kanit-ExtraLight";
+//     src: url("https://fonts.gstatic.com/s/kanit/v7/nKKXOGGoMkG5t2A0f7Pv7hNVdoK8WQ.ttf") format('truetype');
+//   }
+  
+//   @font-face {
+//     font-family: "Kanit-Regular";
+//     src: url("https://fonts.googleapis.com/css2?family=Kanit&display=swap") format('truetype');
+//   }
+  
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400&display=swap');
 
-body{
-    overflow-x: hidden;
-}
+
+
+
 *{
     ::selection{
         background: #2933B9;
         color: #ffffff;
     }
+}
+body{
+    overflow-x: hidden;
 }
 ::-webkit-scrollbar {
     width: 7px;

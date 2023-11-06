@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Portfolio de Romain
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bienvenue sur mon portfolio personnel ! 
 
-## Available Scripts
+## Présentation
 
-In the project directory, you can run:
+Je m'appelle Romain, et j'ai conçu l'intégralité de ce portfolio. Il a été développé en utilisant Vite, une technologie rapide pour la création de projets web. 
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Pour installer et exécuter ce projet sur votre ordinateur, suivez ces étapes :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Assurez-vous d'avoir Node.js installé sur votre machine. Si ce n'est pas le cas, vous pouvez le télécharger depuis [le site officiel de Node.js](https://nodejs.org/).
 
-### `npm test`
+2. Clonez ce dépôt sur votre ordinateur en utilisant la commande suivante :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```git clone https://github.com/votre-nom/portfolio.git```
 
-### `npm run build`
+3. Accédez au répertoire du projet :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```cd Portfolio```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Installez les dépendances en utilisant npm ou yarn :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```npm install``` ou ``` yarn install```
 
-### `npm run eject`
+5. Démarrez l'application en mode développement :
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```npm run dev```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+6. Ouvrez votre navigateur et accédez à l'adresse : `http://localhost:3000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributeurs
 
-## Learn More
+- 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Devlog - Portfolio de Romain
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Version 1.5 - Passage de Create-React-App à Vite + Correction de bugs (responsive, erreurs)
 
-### Code Splitting
+Dans cette version, j'ai décidé de passer de Create-React-App à Vite, une technologie de développement web plus rapide. Cela devrait améliorer les performances de mon portfolio. J'ai également consacré du temps à corriger des bugs, en particulier ceux liés à la réactivité et aux erreurs qui pouvaient survenir lors de l'utilisation. Cette mise à jour devrait rendre l'expérience utilisateur plus fluide.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Version 1.0.2 - Correction de bugs mineurs
 
-### Analyzing the Bundle Size
+J'ai identifié et résolu quelques bugs mineurs dans le code de mon portfolio. Bien que ces problèmes n'aient pas eu un impact majeur, il est essentiel de maintenir une application sans erreurs pour offrir la meilleure expérience possible aux utilisateurs.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Version 1.0.1 - Amélioration de la réactivité
 
-### Making a Progressive Web App
+La réactivité est cruciale pour que mon portfolio soit accessible sur divers appareils. J'ai travaillé sur des ajustements pour garantir que mon application s'adapte correctement aux différents écrans, améliorant ainsi son accessibilité.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Version 1.0.0 - Première version de l'application avec Create-React-App
 
-### Advanced Configuration
+La toute première version de mon portfolio a été développée à l'aide de Create-React-App. À ce stade, l'application est totalement responsive, ce qui signifie qu'elle peut être utilisée sur différents appareils, des ordinateurs de bureau aux smartphones.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Pour découvrir mon portfolio en ligne, veuillez visiter mon site web à l'adresse suivante : [romainsavigny.be](https://romainsavigny.be/).

@@ -17,10 +17,10 @@ const Home = () => {
 
     emailjs
       .sendForm(
-        process.env.REACT_APP_SERVICE,
-        process.env.REACT_APP_TEMPLATE,
+        "YOUR_Service",
+        "YOUR_Template",
         form.current,
-        process.env.REACT_APP_ID
+        "YOUR_ID"
       )
       .then(
         (result) => {
@@ -34,7 +34,7 @@ const Home = () => {
             "<p class=error>Une erreur s'est produite, veuillez réessayer</p>";
           setTimeout(() => {
             formMessage.innerHTML = "";
-          }, 5000);
+          }, 500000);
         }
       );
   };
@@ -67,10 +67,6 @@ const Home = () => {
       window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
-  console.log(
-    "%cJe reconnais qu'il y a des erreurs ici... Saurais-tu comment les rectifier ? N'hésite pas à m'expliquer via le formulaire 😀",
-    "color: #ffff; font-size:2rem;"
-  );
   return (
     <>
       <ScrollTop />
