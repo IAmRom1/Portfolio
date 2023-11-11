@@ -1,7 +1,7 @@
 {
   "name": "new",
   "private": true,
-  "version": "1.5.0",
+  "version": "1.5.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,8 +14,10 @@
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.493",
     "emailjs-com": "^3.2.0",
+    "framer-motion": "^10.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.5.3",
     "react-router-dom": "^6.18.0",
     "sass": "^1.69.5"
   },

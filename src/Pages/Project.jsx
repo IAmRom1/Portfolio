@@ -6,6 +6,7 @@ import ScrollTop from "../components/ScrollTop";
 import UIProjet from "./../assets/imgs/UI-Project.png";
 import VisuelFigma from "./../assets/imgs/visuelFigma.png";
 import VisuelYTB2MP4 from "./../assets/imgs/VisuelYoutube2mp4.png";
+import { motion } from "framer-motion";
 
 const Project = () => {
   return (
@@ -15,6 +16,12 @@ const Project = () => {
       <section className="Section1">
         <h1>Projet</h1>
         <div className="container">
+          <motion.div
+            initial={{opacity:0, x:-300}}
+            animate={{opacity:1, x:0}}
+            transition={{duration:1}}
+          >
+
           <div className="text">
             <h2>De l'idée à la réalité</h2>
             <p>
@@ -28,6 +35,7 @@ const Project = () => {
               Studio Code.
             </p>
           </div>
+          </motion.div>
           <img
             src={UIProjet}
             alt="Ilustration Iterface Utilisateur, Expérience Utilisateur"

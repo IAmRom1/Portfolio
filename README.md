@@ -37,6 +37,10 @@ Pour installer et exécuter ce projet sur votre ordinateur, suivez ces étapes :
 
 ## Devlog - Portfolio de Romain
 
+### Version 1.5.1
+
+Intégration de Framer Motion avec une touche secrète supplémentaire ! 
+
 ### Version 1.5 - Passage de Create-React-App à Vite + Correction de bugs (responsive, erreurs)
 
 Dans cette version, j'ai décidé de passer de Create-React-App à Vite, une technologie de développement web plus rapide. Cela devrait améliorer les performances de mon portfolio. J'ai également consacré du temps à corriger des bugs, en particulier ceux liés à la réactivité et aux erreurs qui pouvaient survenir lors de l'utilisation. Cette mise à jour devrait rendre l'expérience utilisateur plus fluide.

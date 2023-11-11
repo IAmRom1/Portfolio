@@ -7,8 +7,17 @@ import Skill_img from "../assets/imgs/TableauSkill.png";
 import ScrollTop from "../components/ScrollTop";
 import Projet_img from "../assets/imgs/Projet.png";
 import Footer2 from "../components/Footer2";
+import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
 
 const Home = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
+  const animationVariants = {
+    hidden: { opacity: 0, x: 500 },
+    visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+  };
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -17,10 +26,10 @@ const Home = () => {
 
     emailjs
       .sendForm(
-        "YOUR_Service",
-        "YOUR_Template",
+        "service_kuj1txr",
+        "template_wf43agg",
         form.current,
-        "YOUR_ID"
+        "GD1VsRnSCK90uWEKi"
       )
       .then(
         (result) => {
@@ -67,6 +76,8 @@ const Home = () => {
       window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
+  console.log('%cSalut, fait /Happy (https://romainsavigny.be/Happy)', 'font-size: 40px; color: #3745FD;');
+
   return (
     <>
       <ScrollTop />
@@ -122,9 +133,15 @@ const Home = () => {
             scene="https://prod.spline.design/TspWfyl-7Z0Aeb0U/scene.splinecode"
           />
           <div className="text">
+          <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          variants={animationVariants}
+          >
             <h2>A propos de moi</h2>
             <p>
-              Bonjour, je m'appelle Romain et j'ai 19 ans. J'étais initialement
+              Bonjour, je m'appelle Romain et j'ai 20 ans. J'étais initialement
               passionné par le montage vidéo, mais il y a un an, j'ai découvert
               le monde du développement web. Cette découverte m'a rapidement
               passionné, et depuis lors, j'ai consacré un an à apprendre le
@@ -135,6 +152,7 @@ const Home = () => {
                 Télécharger mon CV
               </a>
             </button>
+          </motion.div>
           </div>
         </div>
       </section>
