@@ -14,7 +14,7 @@ Pour installer et exécuter ce projet sur votre ordinateur, suivez ces étapes :
 
 2. Clonez ce dépôt sur votre ordinateur en utilisant la commande suivante :
 
-```git clone https://github.com/votre-nom/portfolio.git```
+```git clone https://github.com/IAmRom1/Portfolio.git.git```
 
 3. Accédez au répertoire du projet :
 
