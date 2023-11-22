@@ -17,6 +17,7 @@ import Footer from "../components/Footer";
 import ScrollTop from "../components/ScrollTop";
 
 const Skill = () => {
+  document.title = "Romain Savigny - Compétences";
   return (
     <>
     <ScrollTop/>

@@ -6,6 +6,7 @@ import imgPortfolio from "./../assets/imgs/portfolio.png";
 import TableauFigma from "./../assets/imgs/tableauFigma.png";
 
 const Portfolio = () => {
+  document.title = "Romain Savigny - Portfolio";
   return (
     <>
       <ScrollTop />

@@ -9,6 +9,7 @@ import VisuelYTB2MP4 from "./../assets/imgs/VisuelYoutube2mp4.png";
 import { motion } from "framer-motion";
 
 const Project = () => {
+  document.title = "Romain Savigny - Projet";
   return (
     <>
       <Navbar/>

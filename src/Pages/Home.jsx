@@ -11,6 +11,7 @@ import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 
 const Home = () => {
+  document.title = "Portfolio de Romain Savigny développeur Front-End";
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
@@ -76,7 +77,7 @@ const Home = () => {
       window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
-  console.log('%cSalut, fait /Happy (https://romainsavigny.be/Happy)', 'font-size: 40px; color: #3745FD;');
+  console.log('%c#KCORP', 'font-size: 40px; color: #3745FD;');
 
   return (
     <>

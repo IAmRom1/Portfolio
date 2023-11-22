@@ -14,7 +14,7 @@ Pour installer et exécuter ce projet sur votre ordinateur, suivez ces étapes :
 
 2. Clonez ce dépôt sur votre ordinateur en utilisant la commande suivante :
 
-```git clone https://github.com/IAmRom1/Portfolio.git.git```
+```git clone https://github.com/IAmRom1/Portfolio.git```
 
 3. Accédez au répertoire du projet :
 
@@ -36,6 +36,10 @@ Pour installer et exécuter ce projet sur votre ordinateur, suivez ces étapes :
 - 
 
 ## Devlog - Portfolio de Romain
+
+### Version 1.5.2
+
+Ajout de la balise <Title> sur l'ensemble des pages.
 
 ### Version 1.5.1
 
