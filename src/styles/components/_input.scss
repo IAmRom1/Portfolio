@@ -12,12 +12,14 @@
     padding-left: 15px;
     padding-top: 5px;
     transition: 0.3s;
+    background-color: rgb(69, 69, 69);
+    cursor:not-allowed;
     &::placeholder{
         color: rgb(189, 189, 189);
         font-family: $Font-kanit-Light;
     }
-    &:focus{
-        transition: 0.2s;
-        border: 4px solid white;
-    }
+    // &:focus{
+    //     transition: 0.2s;
+    //     border: 4px solid white;
+    // }
 }

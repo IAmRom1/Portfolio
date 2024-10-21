@@ -9,6 +9,7 @@ import Projet_img from "../assets/imgs/Projet.png";
 import Footer2 from "../components/Footer2";
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
+import PopUp from "../components/PopUp";
 
 const Home = () => {
   document.title = "Portfolio de Romain Savigny développeur Front-End";
@@ -23,30 +24,30 @@ const Home = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    const formMessage = document.querySelector("form");
+    // const formMessage = document.querySelector("form");
 
-    emailjs
-      .sendForm(
-        "service_kuj1txr",
-        "template_wf43agg",
-        form.current,
-        "GD1VsRnSCK90uWEKi"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          form.current.reset();
-          formMessage.innerHTML = "<p class=success>Message envoyé!</p>";
-        },
-        (error) => {
-          console.log(error.text);
-          formMessage.innerHTML =
-            "<p class=error>Une erreur s'est produite, veuillez réessayer</p>";
-          setTimeout(() => {
-            formMessage.innerHTML = "";
-          }, 500000);
-        }
-      );
+    // emailjs
+    //   .sendForm(
+    //
+    //
+    //     form.current,
+    //     
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //       form.current.reset();
+    //       formMessage.innerHTML = "<p class=success>Message envoyé!</p>";
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //       formMessage.innerHTML =
+    //         "<p class=error>Une erreur s'est produite, veuillez réessayer</p>";
+    //       setTimeout(() => {
+    //         formMessage.innerHTML = "";
+    //       }, 500000);
+    //     }
+    //   );
   };
   const [splineStyle, setSplineStyle] = useState({
     width: "100%",
@@ -83,6 +84,7 @@ const Home = () => {
     <>
       <ScrollTop />
       <Navbar />
+      <PopUp/>
       <section className="intro">
         <div className="container">
           <h1>Développeur Front-End</h1>
@@ -308,6 +310,8 @@ const Home = () => {
         </div>
         <div id="contact" className="container">
           <h2>Contact moi</h2>
+          <p>Ce formulaire a été bloquer.</p>
+          <p>Si vous souhaitez me contacter passer par mon email <a href="mailto:contact@romainsavigny.be">contact@romainsavigny.be</a></p>
           <form ref={form} onSubmit={sendEmail}>
             <input
               type="text"
@@ -315,13 +319,13 @@ const Home = () => {
               placeholder="Votre Prénom | Nom"
               minLength="2"
               autoComplete="off"
-              required
+              readOnly="on"
             />
             <input
               type="email"
               name="email"
               placeholder="Votre E-mail"
-              required
+              readOnly="on"
             />
             <textarea
               name="message"
@@ -331,7 +335,7 @@ const Home = () => {
               placeholder="Votre Message"
               minLength="15"
               maxLength="3000"
-              required
+              readOnly="on"
             ></textarea>
             <input type="submit" />
           </form>

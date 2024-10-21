@@ -15,7 +15,18 @@
             color: white;
             font-family: $Font-kanit-Regular;
             font-size: 3.5rem;
-        }form{
+        }
+        p{
+            color: white;
+            font-family: $Font-kanit-Regular;
+            font-size: 1.5rem;
+            margin: 20px;
+        }
+        a{
+            color: white;
+            font-family: $Font-kanit-Regular;
+        }
+        form{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -41,15 +52,17 @@
                 outline: none;
                 border: white 2px solid;
                 transition: 0.3s;
-                &:hover{
-                    transition: 0.2s;
-                    background: $color-p;
-                    color: white;
-                    box-shadow: 8px 12px 4px 2px rgba(0, 0, 0, 0.25);
-                }
-                &:focus{
-                    background: $color-p-s;
-                }
+                cursor:not-allowed;
+                background-color: rgb(69, 69, 69);
+                // &:hover{
+                //     transition: 0.2s;
+                //     background: $color-p;
+                //     color: white;
+                //     box-shadow: 8px 12px 4px 2px rgba(0, 0, 0, 0.25);
+                // }
+                // &:focus{
+                //     background: $color-p-s;
+                // }
 
             }.success{
                 color: white;
