@@ -22,9 +22,9 @@ const PopUp = () => {
   return (
     <div className="PopUp">
       <button onClick={handleClose} className="close-button">X</button>
-      <h2>Bienvenue sur mon portefolio !</h2>
+      <h2>Bienvenue sur mon portfolio ! </h2>
       <p>
-        Ce site n'est plus mis à jour, il est donc possible que vous trouviez des bugs et je m'en excuse.
+        Ce site n'est plus mis à jour, il est donc possible que vous rencontriez des bugs et des projets anciens. Je m'en excuse.
         Je travaille actuellement sur un nouveau portfolio.
       </p>
     </div>

@@ -27,16 +27,13 @@ const Skill = () => {
           <div className="text">
             <h1>Mes compétences</h1>
             <p>
-              J'ai commencé ma formation en HTML et CSS sur OpenClassroom il y a
-              un an, et j'ai rapidement apprécié le domaine du développement
-              web. J'ai progressé avec succès dans ce domaine. Une fois que j'ai
-              maîtrisé <span>HTML</span> et <span>CSS</span>, j'ai décidé
-              d'apprendre <span>SCSS</span> pour avoir plus de possibilités en
-              matière de stylisation. Par la suite, j'ai approfondi mes
-              compétences en apprenant <span>JavaScript</span>, ce qui m'a
-              permis de rendre mes applications plus dynamiques. Actuellement,
-              je me concentre sur <span>React</span>, et je continue à apprendre
-              de nouvelles choses à son sujet.
+              J'ai commencé ma formation en <span>HTML</span> et <span>CSS</span> sur OpenClassroom il y a quelque temps, 
+              et j'ai rapidement développé une passion pour le développement web. Après avoir acquis une solide maîtrise de 
+              <span>HTML</span> et <span>CSS</span>, j'ai choisi d'apprendre <span>SCSS</span> pour enrichir mes compétences 
+              en stylisation. J'ai ensuite approfondi mes connaissances en <span>JavaScript</span>, ce qui m'a permis de rendre 
+              mes applications plus dynamiques. Actuellement, je me concentre sur <span>React</span> et <span>TypeScript</span>, 
+              tout en poursuivant l'apprentissage de <span>.NET</span>, et je continue à explorer de nouvelles 
+              technologies pour améliorer mes compétences.
             </p>
           </div>
           <img

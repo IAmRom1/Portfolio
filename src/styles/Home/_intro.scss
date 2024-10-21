@@ -32,6 +32,20 @@
             font-weight: 300;
             line-height: normal; 
             padding-top: 5%;
+            a{
+                color: #fff;
+                &::after {
+                    content: "";
+                    position: relative;
+                    background-image: url("../../../src/assets/imgs/LogoTweetz.svg");
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                    margin-left: 5px;
+                  }
+            }
         }
     }.scroll{
         svg{

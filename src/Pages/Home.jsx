@@ -89,7 +89,7 @@ const Home = () => {
         <div className="container">
           <h1>Développeur Front-End</h1>
           <p>
-            Un an d'apprentissage en autodidacte, étudiant en développement web.
+          Un an de pratique en entreprise chez <a href="https://tweetz.com/">Tweetz</a> et étudiant en 2ème année.
           </p>
         </div>
         <Spline
@@ -144,8 +144,8 @@ const Home = () => {
           >
             <h2>A propos de moi</h2>
             <p>
-              Bonjour, je m'appelle Romain et j'ai 20 ans. J'étais initialement
-              passionné par le montage vidéo, mais il y a un an, j'ai découvert
+              Bonjour, je m'appelle Romain et j'ai 21 ans. J'étais initialement
+              passionné par le montage vidéo, mais il y a deux ans, j'ai découvert
               le monde du développement web. Cette découverte m'a rapidement
               passionné, et depuis lors, j'ai consacré un an à apprendre le
               développement web front-end en autodidacte.
@@ -217,11 +217,10 @@ const Home = () => {
         <div className="container">
           <div className="box">
             <p>
-              J'ai acquis de solides compétences en HTML et CSS, avec une
-              préférence marquée pour SCSS. En ce qui concerne le JavaScript,
-              j'ai des bases, et je suis particulièrement attiré par React, une
-              bibliothèque que j'apprécie beaucoup. J'ai appris tout cela de
-              manière autodidacte.
+            Je possède de solides compétences en HTML et CSS, avec une excellente maîtrise du SCSS. En JavaScript, 
+            je suis également compétent et me spécialise actuellement en React et TypeScript, deux technologies que 
+            j'affectionne particulièrement. Mon apprentissage a été principalement autodidacte, et je continue à explorer 
+            des frameworks et outils avancés pour enrichir mes compétences.
             </p>
             <NavLink to="/Compétences">
               <button>En savoir plus</button>
@@ -239,9 +238,11 @@ const Home = () => {
           <img src={Projet_img} alt="Usine a création de site internet" />
           <div className="text">
             <p>
-              Pendant ma période d'apprentissage, j'ai travaillé sur différents
-              projets, notamment la création d'un quiz, d'un générateur de mots
-              de passe, d'un portfolio, et bien d'autres encore.
+            À mes débuts, j'ai travaillé sur plusieurs petits projets, tels que la création 
+            d'un quiz, d'un générateur de mots de passe, d'un portfolio, et bien d'autres encore. 
+            Aujourd'hui, je me concentre sur des projets plus ambitieux, notamment le développement 
+            d'une application native de sport et d'un site de location de bateaux, qui sont actuellement 
+            en cours de réalisation.
             </p>
             <NavLink to="/Projet">
               <button>En savoir plus</button>
